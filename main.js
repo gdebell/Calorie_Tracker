@@ -1,3 +1,5 @@
+//CHANGES MADE ON THE BRANCH
+
 $(document).on('ready', function(e) {
   console.log("Sanity Check!");
 })
@@ -38,12 +40,9 @@ $(function() {
       console.log(foods);
       //console.log(foods[0].name);
 
-
-
       for (var i = 0; i< foods.length; i++) {
         $('#output').append('<option>' + foods[i].name + '</option>');
       }
-
 
 
       $('#output').change(function(e) {
@@ -66,12 +65,13 @@ $(function() {
 
             fatTotal += (foods[matchPosition].fat);
 
-            //console.log("CAL TOTAL>>>>>>>>");
-            //console.log(calorieTotal);
+            console.log("CAL TOTAL>>>>>>>>");
+            console.log(calorieTotal);
             console.log("FAT TOTAL::::::::");
             console.log(fatTotal);
 
             //add an event listner
+
             // $('#resultTable:last').append('<tr><td>' + '       ' + '</td><td>' + calorieTotal + '</td><td>' + fatTotal + '</td></tr>');
 
 
