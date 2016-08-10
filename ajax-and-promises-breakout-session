@@ -16,6 +16,9 @@ $(document).on('ready', function() {
 //   console.log(data);
 // });
 
+
+
+
 function searchMovie(title) {
   return new Promise(function(resolve, reject) {
     // resolve = function
@@ -29,6 +32,9 @@ function searchMovie(title) {
     });
   });
 }
+
+
+
 
 // searchMovie('Frozen').then(function(movie) {
 //   console.log(movie);
