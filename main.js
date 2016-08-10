@@ -4,6 +4,9 @@
 //change generic for loops to forEach
 //Long files -> short files
 
+
+//checking git
+
 $(document).on('ready', function(e) {
     console.log('sanity check!');
 });
