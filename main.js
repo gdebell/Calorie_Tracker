@@ -38,6 +38,8 @@ $(function() {
       console.log(foods);
       //console.log(foods[0].name);
 
+
+
       for (var i = 0; i< foods.length; i++) {
         $('#output').append('<option>' + foods[i].name + '</option>');
       }
@@ -69,19 +71,21 @@ $(function() {
             console.log("FAT TOTAL::::::::");
             console.log(fatTotal);
 
-            $('#resultTable:last').append('<p>Hi</p>');
+            //add an event listner
+            // $('#resultTable:last').append('<tr><td>' + '       ' + '</td><td>' + calorieTotal + '</td><td>' + fatTotal + '</td></tr>');
 
 
             break;
           }
-
-
         }
 
-
-
           })
+          //add event listner
+
+
         });
+
+
       });
     });
 
