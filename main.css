@@ -1,16 +1,50 @@
 body {
   background: #26393D;
   margin-left: 10%;
-  color: #FFFAE4;
   text-align: left;
+  color: #FFFAE4;
+  font-size: 25px;
 }
+
+#header {
+  border-bottom: 1px solid black;
+}
+
 
 h1 {
   color: #D0A825;
   text-align: center;
 }
 
-.header {
-  margin-bottom: 10%;
+h2 {
+  border-bottom: 1px solid black;
+}
 
+#output {
+  margin-top: 150px;
+}
+
+#submit {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+
+.row {
+  margin-bottom: 50px;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 30px;
+}
+
+.results {
+  margin-top: 80px;
+
+}
+
+#fruitInput {
+  color: #40627C;
+  font-size: 15px;
 }
