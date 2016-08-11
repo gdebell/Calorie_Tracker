@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Tracker</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+
+  <body class = "container">
+
+    <section class ="row rowOne">
+      <div class="col-xs-12 col-md-12 col-lg-12" id="header">
+        <h1>Nutritional Tracker</h1>
+      </div>
+    </section>
+
+
+    <section class ="row">
+
+      <div class="col-xs-12 col-md-6 col-lg-6">
+
+        <form class="form-horizontal" id="foodForm">
+          <div class="form-group">
+            <label for="foodName" class="label">Food: </label>
+            <input type="text" id="fruitInput" class="control-label" value=" ">
+          </div>
+          <input class="btn btn-default" id="submit" type="submit" value="Submit">
+        </form>
+
+
+        <div class="selectBar" id="selectBar" val="">
+          <select class="control-label" id="output"  style="width: 220px;" size="1">
+
+          <option>Select food here: </option></select>
+        </div>
+
+        <div class="image">
+          <img src="./images/calIntake.png" alt="calorie data table" height="200" width="500">
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-xs-12 col-md-6 col-lg-6">
+        <h2>Results</h2>
+
+
+      <table class="table" id="resultTable">
+        <tr><th>Food</th><th>Calories</th><th>Fat</th></tr>
+      </table>
+
+      <table class="table" id="calFatTotals">
+        <tr><th></th><th></th><th></th></tr>
+      </table>
+      </div>
+    </section>
+
+    <div id="target">
+    </div>
+
+    <section class ="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  </body>
+
+</html>
