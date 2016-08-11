@@ -5,7 +5,6 @@
 //Long files -> short files
 
 
-//checking git
 
 $(document).on('ready', function(e) {
     console.log('sanity check!');
@@ -16,12 +15,16 @@ $(document).on('ready', function(e) {
 var calorieTotal = 0;
 var fatTotal = 0;
 
-
-
 $('form').on('submit', function(e) {
     e.preventDefault();
+
     var dataFromSite = ($('#fruitInput').val());
-    var ajaxReturn = searchFoodList(dataFromSite).then(accessData).then(makeObject).then(makeSelectBar).then(grabDataFromUserInput);
+
+    if (dataFromSite === ' ') {
+       alert ("Invalid input. Please try again.");
+    }
+
+    var ajaxReturn = searchFoodList(dataFromSite).then(accessData).then(makeObject).then(makeSelectBar)
     $('#fruitInput').val('');
 })
 
@@ -34,8 +37,11 @@ function searchFoodList(dataFromSite) {
     }).done (function(data) {
       //console.log(data);
       //console.log("inside function");
+      console.log("Ajax has been called!")
       resolve(data);
-    });
+    }).fail(function(err) {
+      console.log('Error. Your ajax call is busted and jankie!');
+    })
   });
 }
 
@@ -45,19 +51,13 @@ accessData = function(inputFromAjax) {
   var listOfHits = [];
 
   for (key in c) {
-    //console.log(c[key]);
-    //console.log("Made it to list of foods!!!")
     listOfHits.push(c[key]);
-    //console.log(listOfHits);
-    // return listOfHits;
   };
-  //console.log(listOfHits);
   return listOfHits
 }
 
 
 var foods = [];
-
 makeObject = function (listOfHits) {
   listOfHits.forEach(function(object) {
     var itemName = object.fields.item_name;
@@ -77,29 +77,40 @@ makeSelectBar = function (foods) {
   for (var i = 0; i < foods.length; i++) {
     $('#output').append('<option value="' + i + '">' + foods[i].name + '</option>');
   }
-  //console.log("Select Bar is made!!!!");
 }
 
 
-grabDataFromUserInput = function () {
-  var foodItemSelected;
-  $('#output').change(function(e) {
-    foodItemSelected = $('#output').val();
-    //console.log(foodItemSelected);
-    //console.log("User selected ", foods[foodItemSelected]);
-    //console.log("In the grab data from user function!!!!!")
-    //console.log("The user selected... ");
+
+$('#output').change(function(e) {
+    var foodItemSelected = $('#output').val();
     var foodName = (foods[foodItemSelected].name);
     var foodCalories = Math.ceil(foods[foodItemSelected].calories);
     var foodFat = Math.ceil(foods[foodItemSelected].fat);
 
     $('#resultTable').append('<tr><td>' + foodName + '</td><td>' + foodCalories + '</td><td>' + foodFat + '</td></tr>');
 
-  });
-
-}
+})
 
 
+
+//
+// $('#output').change(function(e) {
+//     var foodItemSelected = $('#output').val();
+//     var foodName = (foods[foodItemSelected].name);
+//     var foodCalories = Math.ceil(foods[foodItemSelected].calories);
+//     var foodFat = Math.ceil(foods[foodItemSelected].fat);
+//
+//       $('#resultTable').append('<tr><td>' + foodName + '</td><td>' + foodCalories + '</td><td>' + foodFat + '</td></tr>');
+
+
+
+
+
+
+
+
+
+//$('#resultTable').empty();
 // for (var i = 0; i< foods.length; i++) {
 //       if (foods[i].name === foodItemSelected) {
 //         console.log("In display function!!!!");
