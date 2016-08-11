@@ -37,8 +37,9 @@ function accessData(inputFromAjax) {
   return listOfHits;
 }
 
+var foods = [];
 function makeObject(listOfHits) {
-  var foods = [];
+  foods = [];
   listOfHits.forEach(function(object) {
     var itemName = object.fields.item_name;
     foods.push({
