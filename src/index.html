@@ -37,6 +37,10 @@
           <option>Select food here: </option></select>
         </div>
 
+        <div class="image">
+          <img src="./images/calIntake.png" alt="calorie data table" height="200" width="500">
+        </div>
+
 
 
       </div>
@@ -47,12 +51,17 @@
 
 
       <table class="table" id="resultTable">
-        <tr id><th>Food</th><th>Calories</th><th>Fat</th></tr>
-
+        <tr><th>Food</th><th>Calories</th><th>Fat</th></tr>
       </table>
 
+      <table class="table" id="calFatTotals">
+        <tr><th></th><th></th><th></th></tr>
+      </table>
       </div>
     </section>
+
+    <div id="target">
+    </div>
 
     <section class ="row">
 
@@ -74,6 +83,7 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
   </body>
 
 </html>
