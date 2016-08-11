@@ -1,8 +1,9 @@
 // jquery events
 
-// $(document).on('ready', function(e) {
-//   console.log('sanity check!');
-// });
+$(document).on('ready', function(e) {
+  //console.log('sanity check!');
+  calorieTotal = 0;
+});
 
 $('form').on('submit', function(e) {
   e.preventDefault();
@@ -34,5 +35,10 @@ $('#output').change(function(e) {
   console.log('Fat results: ' + fatTotal);
 
   $('#calFatTotals tr').remove();
-  $('#calFatTotals').append('<tr><td>Totals</td><td>' + calorieTotal + '</td><td>' + fatTotal + '</td></tr>');
+  $('#calFatTotals').append('<tr><td>Totals'+'                            ' + '</td><td>       ' + calorieTotal + '</td><td>       ' + fatTotal + '</td></tr>');
+
+  if(calorieTotal > 2000) {
+    $('#warning').append('Calorie in take is high.');
+  }
+
 });

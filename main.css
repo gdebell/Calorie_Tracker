@@ -4,34 +4,45 @@ body {
   text-align: left;
   color: #FFFAE4;
   font-size: 25px;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
+
 
 #header {
   border-bottom: 1px solid black;
 }
 
+.display_data {
+  background-color: white;
+}
+
 
 h1 {
-  color: #D0A825;
+  color: #333300;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
   border-bottom: 1px solid black;
+  color: #110b28;;
 }
 
 #output {
-  margin-top: 150px;
+  margin-top: 140px;
 }
 
 #submit {
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
 .row {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -47,4 +58,23 @@ h2 {
 #fruitInput {
   color: #40627C;
   font-size: 15px;
+}
+
+
+#selectBar {
+  margin-bottom: 30px;
+}
+
+.label, #resultTable {
+  color: #110b28;
+}
+
+#calFatTotals {
+  color: #ff0000;
+}
+
+#warning {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 32px;
 }

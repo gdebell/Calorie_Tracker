@@ -22,7 +22,7 @@ function searchFoodList(dataFromSite) {
       console.log('Ajax has been called!');
       resolve(data);
     }).fail(function(err) {
-      console.log('Error. Your ajax call is busted and jankie!');
+      alert ('Error. Your ajax call is busted and jankie!');
     });
   });
 }
