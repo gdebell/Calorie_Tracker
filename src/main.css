@@ -10,16 +10,6 @@ body {
   background-size: cover;
 }
 
-
-#header {
-  border-bottom: 1px solid black;
-}
-
-.display_data {
-  background-color: white;
-}
-
-
 h1 {
   color: #333300;
   text-align: center;
@@ -31,15 +21,25 @@ h2 {
   color: #110b28;;
 }
 
-#output {
+
+
+
+.header {
+  border-bottom: 1px solid black;
+}
+
+.display_data {
+  background-color: white;
+}
+
+.output {
   margin-top: 140px;
 }
 
-#submit {
+.submit {
   margin-left: 150px;
   margin-top: 40px;
 }
-
 
 .row {
   margin-bottom: 20px;
@@ -52,28 +52,27 @@ h2 {
 
 .results {
   margin-top: 80px;
-
 }
 
-#fruitInput {
+.fruit_input {
   color: #40627C;
   font-size: 15px;
 }
 
 
-#selectBar {
+.select_bar {
   margin-bottom: 30px;
 }
 
-.label, #resultTable {
+.label, #result_table {
   color: #110b28;
 }
 
-#calFatTotals {
+.cal_fat_totals {
   color: #ff0000;
 }
 
-#warning {
+.warning {
   color: #ff0000;
   font-weight: bold;
   font-size: 32px;
