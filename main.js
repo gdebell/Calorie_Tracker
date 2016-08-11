@@ -48,13 +48,11 @@ function makeObject(listOfHits) {
       fat: object.fields.nf_total_fat
     });
   });
-  // console.log(foods);
-  //console.log(foods[0].name);
   return foods;
 }
 
 function makeSelectBar (foods) {
   for (var i = 0; i < foods.length; i++) {
-    $('#output').append('<option value="' + i + '" id="foodCount">' + foods[i].name + '</option>');
+    $('.output').append('<option value="' + i + '" id="foodCount">' + foods[i].name + '</option>');
   }
 }
