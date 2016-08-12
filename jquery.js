@@ -5,6 +5,7 @@ $(document).on('ready', function(e) {
   calorieTotal = 0;
   var gender = 1;
   var user_pick_cal;
+  var user_pick_cal_num;
 
 });
 
@@ -39,10 +40,10 @@ $('.output').change(function(e) {
   var womMax = 2300;
 
 
-    if (calorieTotal > user_pick_cal) {
+    if (calorieTotal > user_pick_cal_num) {
       $('.warning').append('Calorie intake is higher than your ' + user_pick_cal + ' calorie goal for the day.');
     } else if(gender === '1' && calorieTotal > womMax) {
-      $('.warning').append('FIRST Calorie intake is higher than 2300 calories for the day.');
+      $('.warning').append('Calorie intake is higher than 2300 calories for the day.');
     } else if (gender === '2'  && calorieTotal > menMax) {
       $('.warning').append('Calorie intake is higher than 2600 calories for the day.');
     }
@@ -51,14 +52,17 @@ $('.output').change(function(e) {
 
 $('#food_form input').on('change', function() {
    gender = ($('input[name=sex]:checked').val());
-   console.log('user picked', gender);
-   console.log(typeof gender);
+   //console.log('user picked', gender);
+   //console.log(typeof gender);
 });
 
 $('form').on('submit', function(e) {
   user_pick_cal = ($('.user_pick_cals').val());
-  console.log('user picked', user_pick_cal);
-  console.log(typeof user_pick_cal);
+  //console.log('user picked', user_pick_cal);
+  //console.log(typeof user_pick_cal);
+  user_pick_cal_num = parseInt(user_pick_cal);
+  console.log(user_pick_cal_num);
+  console.log(typeof user_pick_cal_num);
 });
 
 
