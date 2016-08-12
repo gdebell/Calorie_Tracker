@@ -20,15 +20,14 @@
     <section class ="row row_two">
       <div class="col-xs-12 col-md-6 col-lg-6">
 
-
-
         <div class="pick_gender">
-          <p><strong>I am a ...</strong></p>
+          <h5>I want my maximum calorie intake determined by my gender.</h5>
           <div class="radio">
             <label>
               <input type="radio" class="radio" name="sex"  value="1">female
             </label>
           </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <div class="radio">
             <label>
               <input type="radio" class="radio" name="sex" value="2">male
@@ -36,61 +35,22 @@
           </div>
         </div>
 
-
-
         <form class="form_horizontal my_form" id="food_form">
           <div class="form-group">
-            <label for="food_name" class="label">What did you eat?</label>
+            <input type="number" class="form-control user_pick_cals" id="user_pick_cals" placeholder="I want to enter a custom calorie goal here." val="">
+            <label for="food_name" class="label eat_label">What did you eat?</label>
             <input type="text" class="fruit_input" class="control-label" value=" ">
           </div>
-
-
-
-
           <input class="btn btn-primary submit" type="submit" value="Submit">
         </form>
 
-
-          <!-- <p>Select calorie intake goal:</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_one"s value="2000">2000
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_two" value="2500">2500
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_three" value="3000">3000
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_four" value="3500">3500
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_five" value="4000">4000
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="" id="option_six" value="4500">4500
-            </label>
-          </div> -->
-
-
       <section class="select_bar" val="">
-        <select class="control-label output" style="width: 220px;" size="1">
+        <select class="control-label output" style="width: 300px;" size="1.5">
         <option>Select your food item here:</options></select>
       </section>
       <section class="image">
           <h5>Suggested daily calorie intake.</h5>
-          <img src="./src/images/energy_balance.jpg" class="cal_table_info" alt="calorie data table" height="400" width="400">
+          <img src="./src/images/energy_balance.jpg" class="cal_table_info" alt="calorie data table" height="425" width="425">
       </section>
 
     </div>
@@ -104,11 +64,8 @@
         <table class="table cal_fat_totals">
           <tr><th></th><th></th><th></th></tr>
         </table>
-
-
-      <div id="target"></div>
-
-    </div>
+        <div id="target"></div>
+      </div>
     </section>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
