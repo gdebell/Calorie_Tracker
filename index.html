@@ -18,34 +18,43 @@
 
 
     <section class ="row row_two">
-
       <div class="col-xs-12 col-md-6 col-lg-6">
-        <form class="form_horizontal" id="food_form">
+
+
+
+        <div class="pick_gender">
+          <p><strong>I am a ...</strong></p>
+          <div class="radio">
+            <label>
+              <input type="radio" class="radio" name="sex"  value="1">female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" class="radio" name="sex" value="2">male
+            </label>
+          </div>
+        </div>
+
+
+
+        <form class="form_horizontal my_form" id="food_form">
           <div class="form-group">
-            <label for="food_name" class="label">Food: </label>
+            <label for="food_name" class="label">What did you eat?</label>
             <input type="text" class="fruit_input" class="control-label" value=" ">
           </div>
-          <!-- make a button for male/female & Age group -->
 
 
-      <!-- <section class="pick_gender">
-          <div class="radio">
-            <label>
-              <input type="radio" name="sex" id="female" value="female">female
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="sex" id="male" value="male">male
-            </label>
-          </div>
-        </section> -->
+
+
+          <input class="btn btn-primary submit" type="submit" value="Submit">
+        </form>
 
 
           <!-- <p>Select calorie intake goal:</p>
           <div class="radio">
             <label>
-              <input type="radio" name="" id="option_one" value="2000">2000
+              <input type="radio" name="" id="option_one"s value="2000">2000
             </label>
           </div>
           <div class="radio">
@@ -75,39 +84,31 @@
           </div> -->
 
 
-
-          <input class="btn btn-primary submit" type="submit" value="Submit">
-
-
-
-        </form>
-
-        <div class="select_bar" val="">
-          <select class="control-label output" style="width: 220px;" size="1">
-          <option>Select your food item here:</options></select>
-        </div>
-
-        <div class="image">
+      <section class="select_bar" val="">
+        <select class="control-label output" style="width: 220px;" size="1">
+        <option>Select your food item here:</options></select>
+      </section>
+      <section class="image">
           <h5>Suggested daily calorie intake.</h5>
-          <img src="./src/images/energy_balance.jpg" alt="calorie data table" height="300" width="300">
-        </div>
-      </div>
+          <img src="./src/images/energy_balance.jpg" class="cal_table_info" alt="calorie data table" height="400" width="400">
+      </section>
+
+    </div>
 
       <div class="col-xs-12 col-md-6 col-lg-6 col-md-pull-1 display_data">
         <h2>Results</h2>
-        <div class="warning">
-        </div>
+        <section class="warning"></section>
         <table class="table" id="result_table">
           <tr><th>Food</th><th>Calories</th><th>Fat</th></tr>
         </table>
         <table class="table cal_fat_totals">
           <tr><th></th><th></th><th></th></tr>
         </table>
-      </div>
 
-      <div id="target">
-      </div>
 
+      <div id="target"></div>
+
+    </div>
     </section>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
