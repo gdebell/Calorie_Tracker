@@ -11,18 +11,36 @@ body {
 }
 
 h1 {
-  color: #333300;
+  color: #110b28;
   text-align: center;
   font-weight: bold;
 }
 
 h2 {
   border-bottom: 1px solid black;
-  color: #110b28;;
+  color: #110b28;
+}
+
+h5 {
+  color: #110b28;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 
+.pick_gender {
+  border: 3px solid black;
+  color: #110b28;
+  width: 400px;
+  height: 100px;
+  margin-left: -50px;
+  text-align: center;
+  background-color: white;
+}
 
+.radio {
+  display: inline-block;
+}
 
 .header {
   border-bottom: 1px solid black;
@@ -30,6 +48,13 @@ h2 {
 
 .display_data {
   background-color: white;
+  border: 3px solid black;
+}
+
+
+.cal_table_info {
+  border: 3px solid black;
+  margin-left: -30px;
 }
 
 .output {
@@ -38,7 +63,7 @@ h2 {
 
 .submit {
   margin-left: 150px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .row {
@@ -66,6 +91,7 @@ h2 {
 
 .label, #result_table {
   color: #110b28;
+
 }
 
 .cal_fat_totals {

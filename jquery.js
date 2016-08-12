@@ -3,6 +3,8 @@
 $(document).on('ready', function(e) {
   //console.log('sanity check!');
   calorieTotal = 0;
+  var gender = 1;
+
 });
 
 $('form').on('submit', function(e) {
@@ -32,8 +34,19 @@ $('.output').change(function(e) {
   $('.cal_fat_totals tr').remove();
   $('.cal_fat_totals').append('<tr><td>Total'+'                            ' + '</td><td>       ' + calorieTotal + '</td><td>       ' + fatTotal + '</td></tr>');
 
-  if(calorieTotal > 2000) {
-    $('.warning').append('Calorie in take is high.');
-  }
+  var menMax = 2600;
+  var womMax = 2300;
 
+    if(gender === '1' && calorieTotal > womMax) {
+      $('.warning').append('Calorie intake is higher than 2300 calories for the day.');
+    } else if (gender === '2'  && calorieTotal > menMax) {
+      $('.warning').append('Calorie intake is higher than 2600 calories for the day.');
+    }
+
+});
+
+$('#food_form input').on('change', function() {
+   gender = ($('input[name=sex]:checked').val());
+   console.log('user picked', gender);
+   console.log(typeof gender);
 });
