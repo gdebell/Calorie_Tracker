@@ -60,3 +60,20 @@ $('form').on('submit', function(e) {
   console.log('user picked', user_pick_cal);
   console.log(typeof user_pick_cal);
 });
+
+
+
+$('form').on('submit', function(e) {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      document.getElementById("label").innerHTML = width * 1 + '%';
+    }
+  }
+});
