@@ -23,6 +23,7 @@ h1 {
 h2 {
   border-bottom: 1px solid black;
   color: #110b28;
+  font-size: 18px;
 }
 
 h5 {
@@ -35,6 +36,9 @@ p {
   font-size: 18px;
 }
 
+th {
+  font-size: 15px;
+}
 .pick_gender {
   border: 3px solid black;
   color: #110b28;
@@ -60,7 +64,7 @@ p {
 .display_data {
   background-color: white;
   border: 3px solid black;
-  width: 40%
+  width: 35%
 }
 
 .cal_table_info {
