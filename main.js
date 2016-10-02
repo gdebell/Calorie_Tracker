@@ -1,15 +1,5 @@
-//Refactor Notes
-//5 line method
-//extract to well-names variables
-//change generic for loops to forEach
-//Long files -> short files
-
-//global variable:
-
 var calorieTotal = 0;
 var fatTotal = 0;
-
-// helper functions
 
 function searchFoodList(dataFromSite) {
   return new Promise(function(resolve, reject) {
