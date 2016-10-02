@@ -60,7 +60,7 @@ p {
 .display_data {
   background-color: white;
   border: 3px solid black;
-  width: 50%
+  width: 40%
 }
 
 .cal_table_info {
@@ -123,6 +123,7 @@ p {
 .cal_fat_totals {
   color: #ff0000;
   float: inherit;
+  width: 40%;
 }
 
 .my_form {
@@ -132,7 +133,7 @@ p {
 .warning {
   color: #ff0000;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .myProgress {
