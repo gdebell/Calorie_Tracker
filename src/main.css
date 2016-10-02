@@ -1,3 +1,7 @@
+.container {
+  justify-content: flex-start;
+}
+
 body {
   background: #26393D;
   margin-left: 10%;
@@ -118,6 +122,7 @@ p {
 
 .cal_fat_totals {
   color: #ff0000;
+  float: inherit;
 }
 
 .my_form {
