@@ -21,7 +21,6 @@ h2 {
   color: #110b28;
 }
 
-
 h5 {
   color: #110b28;
   font-weight: bold;
@@ -57,7 +56,7 @@ p {
 .display_data {
   background-color: white;
   border: 3px solid black;
-  width: 50%
+  width: 40%
 }
 
 .cal_table_info {
