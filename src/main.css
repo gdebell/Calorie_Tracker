@@ -3,13 +3,11 @@
 }*/
 
 body {
-  background: #26393D;
   text-align: left;
   color: #FFFAE4;
   font-size: 25px;
   background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -41,7 +39,6 @@ th {
 .pick_gender {
   border: 3px solid black;
   color: #110b28;
-  width: 300px;
   height: 100px;
   text-align: center;
   background-color: white;
@@ -62,7 +59,6 @@ th {
 .display_data {
   background-color: white;
   border: 3px solid black;
-  width: 33%
 }
 
 .cal_table_info {
@@ -93,14 +89,11 @@ th {
 .fruit_input {
   color: #40627C;
   font-size: 15px;
-  width: 170px;
   height: auto;
   border: 3px solid black;
-  margin-left: -5px;
 }
 
 .user_pick_cals {
-  width: 300px;
   border: 3px solid black;
 }
 
@@ -119,8 +112,6 @@ th {
 
 .cal_fat_totals {
   color: #ff0000;
-  float: inherit;
-  width: 40%;
 }
 
 .my_form {
@@ -142,7 +133,6 @@ th {
 
 .myBar {
   position: absolute;
-  width: 0%;
   height: 100%;
   background-color: #110b28;
 }
