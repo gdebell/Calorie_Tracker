@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Tracker</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./src/main.css">
+
+  </head>
+
+  <body class = "container">
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <header class ="row row_one header">
+          <div id"myProgress" class="myProgress">
+            <div id="myBar" class=myBar></div>
+          </div>
+          <h1>Calorie Tracker</h1>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-5">
+        <div class="pick_gender">
+          <h5>I want my maximum calorie intake determined by my gender.</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" class="radio" name="sex"  value="1">female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" class="radio" name="sex" value="2">male
+            </label>
+          </div>
+        </div>
+
+        <form class="form_horizontal my_form" id="food_form">
+          <div class="form-group">
+            <input type="number" class="form-control user_pick_cals" id="user_pick_cals" placeholder="I want to enter a custom calorie goal here." val="">
+            <label for="food_name" class="label eat_label">What did you eat?</label>
+            <input type="text" class="fruit_input" class="control-label" value=" ">
+          </div>
+          <input class="btn btn-primary submit" type="submit" value="Submit">
+        </form>
+
+        <section class="select_bar" val="">
+          <select class="control-label output" style="width: 300px;" size="1.5">
+          <option>Select your food item here:</options>
+          </select>
+        </section>
+
+        <section class="image">
+          <img src="./src/images/energy_balance.jpg" class="cal_table_info" alt="calorie data table" height="300" width="300">
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-7  display_data">
+        <h2>Results</h2>
+          <section class="warning"></section>
+          <table class="table" id="result_table">
+            <tr><th>Food</th><th>Calories</th><th>Fat</th></tr>
+          </table>
+          <table class="table cal_fat_totals">
+            <tr><th></th><th></th><th></th></tr>
+          </table>
+        <div id="target"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./src/main.js"></script>
+    <script type="text/javascript" src="./src/jquery.js"></script>
+  </body>
+</html>
