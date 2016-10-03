@@ -1,6 +1,6 @@
 Welcome to the Calorie Tracker Github Repository!
 
-Here is the Deployed Website
+
 
 What is Calorie Tracker?
 
@@ -10,16 +10,7 @@ How does it work?
 
 When the user visits the website, he or she can select a pre-determined calorie intake maximum based on gender or can input a number.  After setting a goal, the user is asked what they ate.  The application will provide a drop down menu of items that are in the Nutritionix API that match the users input.  The user can select the food item from the menu.  Calories and fat will be added to the total.  The user can select several items.  The user will receive a message when a calorie maximum has been reached.  The calculate can be reset by refreshing the page.
 
-Languges Used: 
-HTML5
-CSS3
-JavaScript
+Languges Used: HTML5, CSS3, JavaScript, jQuery
 
-Tools Used:
-Git + Github 
-Bootstrap
-Responsive Design
-Command Line 
-Web APIS
-Static-Site Hosting
+Tools Used: Git + Github, Bootstrap, Command Line, Web API, Static-Site Hosting
      
