@@ -4,7 +4,6 @@
 
 body {
   background: #26393D;
-  margin-left: 10%;
   text-align: left;
   color: #FFFAE4;
   font-size: 25px;
@@ -49,7 +48,6 @@ th {
   display: inline-block;
   padding: 2px;
   word-wrap: break-word;
-  margin-left: -25px;
 }
 
 .radio {
@@ -69,7 +67,6 @@ th {
 
 .cal_table_info {
   border: 3px solid black;
-  margin-left: -25px;
 }
 
 .output {
@@ -87,7 +84,6 @@ th {
 .btn {
   float: left;
   margin-top: 10px;
-  margin-left: -25px;
 }
 
 .results {
@@ -106,17 +102,14 @@ th {
 .user_pick_cals {
   width: 300px;
   border: 3px solid black;
-  margin-left: -25px;
 }
 
 .select_bar {
   margin-bottom: 30px;
   margin-top: -40px;
-  margin-left: -25px;
   color: #40627C;
 }
 .eat_label {
-  margin-left: -35px;
   font-size: 15px;
 }
 
