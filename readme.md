@@ -1,7 +1,5 @@
 Welcome to the Calorie Tracker Github Repository!
 
-
-
 What is Calorie Tracker?
 
 Calorie Tracker is an application developed and designed by Gina DeBell for the Unit 1 Project.  Calorie Tracker will provide the user with calorie and fat information for the food that was entered.
